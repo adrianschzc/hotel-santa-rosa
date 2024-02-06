@@ -6,14 +6,14 @@ import { useNavbarRef } from "../context/NavbarRef";
 function PrincipalPage() {
   const { sectionRefs } = useNavbarRef();
   const imagenes = [
-    "src/images/carrusel/hotel_central.jpg",
-    "src/images/carrusel/hotel_parte_1.jpg",
-    "src/images/carrusel/hotel_principal.jpg",
+    "./images/carrusel/hotel_central.jpg",
+    "./images/carrusel/hotel_parte_1.jpg",
+    "./images/carrusel/hotel_principal.jpg",
     // ... otras rutas de imágenes
   ];
   const styles = {
     container: {
-      backgroundImage: 'url("src/images/cerro.jpg")',
+      backgroundImage: 'url("./images/cerro.jpg")',
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
