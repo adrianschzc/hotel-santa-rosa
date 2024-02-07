@@ -22,7 +22,6 @@ function PrincipalPage() {
     content: {
       // Estilos para el contenido sobre el fondo (opcional)
       color: "#fff",
-      textAlign: "center",
       padding: "20px",
       borderRadius: "8px",
       backgroundColor: "rgba(0, 0, 0, 0.5)", // Fondo semitransparente

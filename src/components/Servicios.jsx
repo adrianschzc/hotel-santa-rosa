@@ -7,12 +7,14 @@ function Servicios() {
         </h1>
         {/* Servicios */}
         <div className="flex gap-4 h-[400px] w-[100%]">
-          <div className="w-[33.33%] bg-amber-600 p-2">
+          <div className="w-[33.33%] bg-amber-900 p-2 rounded-lg">
             <h2 className="text-center font-semibold">Habitación Sencilla</h2>
           </div>
-
-          <div className="w-[33.33%] bg-amber-600 p-2">
-            <h2 className="text-center font-semibold">Habitación Doble</h2>
+          {/* Habitacion doble */}
+          <div className="w-[33.33%] bg-amber-900 p-2 rounded-lg">
+            <h2 className="text-center font-semibold text-xl p-2">
+              Habitación Doble
+            </h2>
             <div className="flex p-4 items-center justify-center">
               <img
                 src={`${import.meta.env.VITE_URL_TOKEN + "/cuartos.jpg"}`}
@@ -20,15 +22,17 @@ function Servicios() {
                 className="h-[150px] w-[250px] rounded-lg"
               />
             </div>
+
             <div>
-              <ul>
-                <li>Cuarto con dos camas</li>
-                <li>Baño completo</li>
-                <li>Clima</li>
+              <ul className="pl-4 pt-2">
+                <li className="">- Cuarto con dos camas</li>
+                <li>- Baño completo</li>
+                <li>- Clima</li>
               </ul>
             </div>
           </div>
-          <div className="w-[33.33%] bg-amber-600 p-2">
+          {/* Habitacion triple */}
+          <div className="w-[33.33%] bg-amber-900 p-2 rounded-lg">
             <h2 className="text-center font-semibold">Habitación Triple</h2>
           </div>
         </div>

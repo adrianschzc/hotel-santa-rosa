@@ -1,7 +1,7 @@
 import { useNavbarRef } from "../context/NavbarRef";
 
 function Navbar() {
-  const { sectionRefs, handleClick } = useNavbarRef()
+  const { handleClick } = useNavbarRef()
   return (
     <div className="">
       <div className="p-4 bg-amber-700 flex justify-between">
