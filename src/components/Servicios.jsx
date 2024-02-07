@@ -10,8 +10,23 @@ function Servicios() {
           <div className="w-[33.33%] bg-amber-600 p-2">
             <h2 className="text-center font-semibold">Habitación Sencilla</h2>
           </div>
+
           <div className="w-[33.33%] bg-amber-600 p-2">
             <h2 className="text-center font-semibold">Habitación Doble</h2>
+            <div className="flex p-4 items-center justify-center">
+              <img
+                src={`${import.meta.env.VITE_URL_TOKEN + "/cuartos.jpg"}`}
+                alt="Cuarto doble"
+                className="h-[150px] w-[250px] rounded-lg"
+              />
+            </div>
+            <div>
+              <ul>
+                <li>Cuarto con dos camas</li>
+                <li>Baño completo</li>
+                <li>Clima</li>
+              </ul>
+            </div>
           </div>
           <div className="w-[33.33%] bg-amber-600 p-2">
             <h2 className="text-center font-semibold">Habitación Triple</h2>
