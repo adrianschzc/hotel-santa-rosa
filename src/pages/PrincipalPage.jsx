@@ -3,17 +3,19 @@ import Historia from "../components/Historia";
 import Servicios from "../components/Servicios";
 import { useNavbarRef } from "../context/NavbarRef";
 
+
 function PrincipalPage() {
   const { sectionRefs } = useNavbarRef();
   const imagenes = [
-    "./images/carrusel/hotel_central.jpg",
-    "./images/carrusel/hotel_parte_1.jpg",
-    "./images/carrusel/hotel_principal.jpg",
+    "src/images/carrusel/hotel_parte_1.jpg",
+    "src/images/carrusel/hotel_principal.jpg",
+    "src/images/carrusel/hotel_central.jpg",
+    "https://nltravel.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/05/15091807/Entrada-a-Rayones-scaled.jpg"
     // ... otras rutas de imágenes
   ];
   const styles = {
     container: {
-      backgroundImage: 'url("./images/cerro.jpg")',
+      backgroundImage: 'url("src/images/cerro.jpg")',
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
@@ -36,8 +38,8 @@ function PrincipalPage() {
       <div style={styles.content}>
         <div className="h-full w-[1000px] container mb-10">
           <Carrusel autoSlide={true}>
-            {imagenes.map((s) => (
-              <img src={s} />
+            {imagenes.map((s, index) => (
+              <img src={s} key={index} />
             ))}
           </Carrusel>
         </div>
