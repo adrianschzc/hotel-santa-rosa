@@ -6,12 +6,29 @@ function Servicios() {
           Servicios
         </h1>
         {/* Servicios */}
-        <div className="flex gap-4 h-[400px] w-[100%]">
-          <div className="w-[33.33%] bg-amber-900 p-2 rounded-lg">
-            <h2 className="text-center font-semibold">Habitación Sencilla</h2>
+        <div className="lg:flex md:flex gap-4">
+          <div className="lg:w-[33.33%] md:w-[33.33%] w-auto bg-amber-900 p-2 rounded-lg mb-2">
+            <h2 className="text-center font-semibold text-xl p-2">
+              Habitación Sencilla
+            </h2>
+            <div className="flex p-4 items-center justify-center">
+              <img
+                src={`${import.meta.env.VITE_URL_TOKEN + "/cuartos.jpg"}`}
+                alt="Cuarto doble"
+                className="h-[150px] w-[250px] rounded-lg"
+              />
+            </div>
+
+            <div>
+              <ul className="p-6">
+                <li className="">- Cuarto con 1 cama</li>
+                <li>- Baño completo</li>
+                <li>- Clima</li>
+              </ul>
+            </div>
           </div>
           {/* Habitacion doble */}
-          <div className="w-[33.33%] bg-amber-900 p-2 rounded-lg">
+          <div className="lg:w-[33.33%] md:w-[33.33%] w-auto bg-amber-900 p-2 rounded-lg mb-2">
             <h2 className="text-center font-semibold text-xl p-2">
               Habitación Doble
             </h2>
@@ -24,7 +41,7 @@ function Servicios() {
             </div>
 
             <div>
-              <ul className="pl-4 pt-2">
+              <ul className="p-6">
                 <li className="">- Cuarto con dos camas</li>
                 <li>- Baño completo</li>
                 <li>- Clima</li>
@@ -32,8 +49,25 @@ function Servicios() {
             </div>
           </div>
           {/* Habitacion triple */}
-          <div className="w-[33.33%] bg-amber-900 p-2 rounded-lg">
-            <h2 className="text-center font-semibold">Habitación Triple</h2>
+          <div className="lg:w-[33.33%] md:w-[33.33%] w-auto bg-amber-900 p-2 rounded-lg">
+            <h2 className="text-center font-semibold text-xl p-2">
+              Habitación Triple
+            </h2>
+            <div className="flex p-4 items-center justify-center">
+              <img
+                src={`${import.meta.env.VITE_URL_TOKEN + "/cuartos.jpg"}`}
+                alt="Cuarto doble"
+                className="h-[150px] w-[250px] rounded-lg"
+              />
+            </div>
+
+            <div>
+              <ul className="p-6">
+                <li className="">- Cuarto con 3 camas</li>
+                <li>- Baño completo</li>
+                <li>- Clima</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

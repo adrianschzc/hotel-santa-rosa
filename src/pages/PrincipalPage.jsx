@@ -23,18 +23,14 @@ function PrincipalPage() {
       // Estilos para el contenido sobre el fondo (opcional)
       color: "#fff",
       padding: "20px",
-      borderRadius: "8px",
       backgroundColor: "rgba(0, 0, 0, 0.5)", // Fondo semitransparente
     },
   };
   return (
-    <div
-      className="bg-cover bg-center bg-no-repeat min-h-screen"
-      style={styles.container}
-    >
+    <div style={styles.container}>
       <div style={styles.content}>
-        <div className="h-full w-[900px] container mb-10">
-          <Carrusel autoSlide={true}>
+        <div className="h-full lg:w-[900px] w-auto container mb-10">
+          <Carrusel>
             {imagenes.map((s, index) => (
               <img src={s} key={index} />
             ))}
