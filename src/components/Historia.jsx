@@ -15,7 +15,7 @@ function Historia() {
           <span className="">
             En abril de 1982, los fundadores, Sr. Laurentino Sánchez Ramos y la
             Sra. Má Antonia Oyervides, iniciaron un negocio hotelero con gran
-            sacrificio y dedicación. Comenzaron con humildes 5 habitaciones,
+            sacrificio y dedicación. Comenzaron con 5 habitaciones,
             pero gracias a su incansable esfuerzo, la demanda creció. Con el
             tiempo, el establecimiento se expandió a 25 habitaciones,
             consolidándose como un referente de hospitalidad. La historia de
