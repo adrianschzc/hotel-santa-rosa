@@ -6,8 +6,8 @@ function Servicios() {
           Servicios
         </h1>
         {/* Servicios */}
-        <div className="lg:flex md:flex gap-4">
-          <div className="lg:w-[33.33%] md:w-[33.33%] w-auto bg-amber-900 p-2 rounded-lg mb-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="w-auto bg-amber-900 p-2 rounded-lg mb-2">
             <h2 className="text-center font-semibold text-xl p-2">
               Habitación Sencilla
             </h2>
@@ -28,7 +28,7 @@ function Servicios() {
             </div>
           </div>
           {/* Habitacion doble */}
-          <div className="lg:w-[33.33%] md:w-[33.33%] w-auto bg-amber-900 p-2 rounded-lg mb-2">
+          <div className="w-auto bg-amber-900 p-2 rounded-lg mb-2">
             <h2 className="text-center font-semibold text-xl p-2">
               Habitación Doble
             </h2>
@@ -49,7 +49,7 @@ function Servicios() {
             </div>
           </div>
           {/* Habitacion triple */}
-          <div className="lg:w-[33.33%] md:w-[33.33%] w-auto bg-amber-900 p-2 rounded-lg">
+          <div className="w-auto bg-amber-900 p-2 rounded-lg">
             <h2 className="text-center font-semibold text-xl p-2">
               Habitación Triple
             </h2>

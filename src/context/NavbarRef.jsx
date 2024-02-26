@@ -14,6 +14,7 @@ export const NavbarRefProvider = ({ children }) => {
   const sectionRefs = {
     historia: useRef(null),
     servicios: useRef(null),
+    contactar: useRef(null)
     // Agrega más secciones según sea necesario
   };
   const handleClick = (section) => {

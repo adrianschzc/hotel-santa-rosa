@@ -1,4 +1,5 @@
 import Carrusel from "../components/Carrusel";
+import Contactar from "../components/Contactar";
 import Historia from "../components/Historia";
 import Servicios from "../components/Servicios";
 import { useNavbarRef } from "../context/NavbarRef";
@@ -8,7 +9,8 @@ function PrincipalPage() {
   const imagenes = [
     import.meta.env.VITE_URL_TOKEN + "/hotel_parte_1.jpg",
     import.meta.env.VITE_URL_TOKEN + "/hotel_principal.jpg",
-    import.meta.env.VITE_URL_TOKEN + "/hotel_central.jpg",
+    import.meta.env.VITE_URL_TOKEN + "/razzers.jpg",
+    import.meta.env.VITE_URL_TOKEN + "/hotel_noche.jpg",
     import.meta.env.VITE_URL_TOKEN + "/cuartos.jpg",
   ];
   const styles = {
@@ -41,6 +43,9 @@ function PrincipalPage() {
         </div>
         <div ref={sectionRefs.servicios} className="p-4">
           <Servicios />
+        </div>
+        <div ref={sectionRefs.contactar} className="p-4">
+          <Contactar/>
         </div>
       </div>
     </div>
